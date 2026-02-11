@@ -1,9 +1,9 @@
 //BFS USING ADJACENCY MATRIX REPRESENTATION 
 import java.util.*;
-class GraphMatrix{
+class GraphMatrixBFS{
 	int v;
 	int [][]adj;
-	GraphMatrix(int v){
+	GraphMatrixBFS(int v){
 		this.v = v;
 		adj = new int[v][v];
 	}
@@ -28,7 +28,7 @@ class GraphMatrix{
 		}
 	}
 	public static void main(String []args){
-		GraphMatrix g = new GraphMatrix(9);
+		GraphMatrixBFS g = new GraphMatrixBFS(9);
 		g.addEdge(0,1);
 		g.addEdge(1,2);
 		g.addEdge(1,3);
